@@ -76,8 +76,8 @@
             placeholder="Senha"
             >
          
-        <button onclick="goToLoginPage()">Login</button>
-        <a href="#"> Esqueceu sua senha? </a>
+            <button type="button" onclick="goToPage('/HomePage')">Login</button>
+            <a href="#"> Esqueceu sua senha? </a>
         </form>
             </div>
 
@@ -115,6 +115,11 @@
     loginBtn.addEventListener('click', () => {
         container.classList.remove("active")
     });
+
+
+    function goToPage(url) {
+        window.location.href = url;
+    }
 
 </script>
  
